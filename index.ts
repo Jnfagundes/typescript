@@ -26,4 +26,3 @@ const felino: IFelino = {
 
 //types
  
-const animal:
