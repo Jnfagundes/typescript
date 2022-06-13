@@ -26,3 +26,33 @@ const felino: IFelino = {
 
 //types
  
+interface Estudante{
+    nome: string
+    idade: number
+}
+
+interface estudante{
+    serie: string
+}
+
+import $ from 'jquery';
+
+$.fn.extend({
+    novaFuncao() {
+        console.log('Chamou nova função');
+    }
+});
+
+interface Pessoa {
+    nome: string;
+    idade: number;
+    nacionalidade: string;
+
+}
+
+interface Brasileiro extends Omite<Pessoa, 'nacionalidade'>{
+
+}
+const brasileiro: Brasileiro = {
+    
+}
